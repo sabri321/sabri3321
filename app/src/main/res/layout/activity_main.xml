@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/lay_cards"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_card1"
+            android:layout_width="wrap_content"
+            android:scaleType="centerInside"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back" />
+
+        <ImageView
+            android:id="@+id/iv_card2"
+            android:layout_width="wrap_content"
+            android:scaleType="centerInside"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/b_start"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="START"
+        android:layout_below="@+id/lay_cards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/lay_points"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_player1"
+            android:layout_width="wrap_content"
+            android:text="Player 1: 0"
+            android:layout_weight="1"
+            android:textSize="24dp"
+            android:textStyle="italic"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_player2"
+            android:layout_width="wrap_content"
+            android:text="Player 2: 0"
+            android:layout_weight="1"
+            android:textSize="24dp"
+            android:textStyle="italic"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_war"
+        android:layout_width="wrap_content"
+        android:text="WAR"
+        android:layout_weight="1"
+        android:layout_below="@+id/b_start"
+        android:textSize="75dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
